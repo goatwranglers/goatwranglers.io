@@ -30,7 +30,6 @@ import { FeaturesComponent } from './features/features.component';
 import { AboutComponent } from './about/about.component';
 import { SearchComponent } from './search/search.component';
 import { SupportComponent } from './support/support.component';
-import { Footer2Component } from './footer2/footer2.component';
 import { sidebarWidgetsComponent } from './sidebarWidgets/sidebarWidgets.component';
 
 @NgModule({
@@ -47,7 +46,6 @@ import { sidebarWidgetsComponent } from './sidebarWidgets/sidebarWidgets.compone
     AboutComponent,
     SearchComponent,
     SupportComponent,
-    Footer2Component,
     sidebarWidgetsComponent,
   ],
   imports: [

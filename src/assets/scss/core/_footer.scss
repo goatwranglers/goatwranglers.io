@@ -68,27 +68,6 @@
 	}
 }
 
-/*========== Footer2 Css ============*/
-.footer-wrapper-2 {
-		border-top: 2px solid #414658;
-	.bottom-footer {
-		ul {
-			li {
-				margin: 0;
-				padding: 0 8px;
-				&:first-child {
-					padding-left: 0;
-				}
-				a {
-					color: $gray-700;
-					&:hover {
-						color: $blue;
-					}
-				}
-			}
-		}
-	}
-}
 .client-logo .slick-slider {
 	text-align: center;
 	.slide {

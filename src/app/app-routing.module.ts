@@ -33,17 +33,17 @@ export const AppRoutes: Routes = [{
             path: 'contact',
             component: ContactComponent
          }, {
-            path:'features',
-            component:FeaturesComponent
+            path: 'features',
+            component: FeaturesComponent
          }, {
-            path:'about',
-            component:AboutComponent
+            path: 'about',
+            component: AboutComponent
          }, {
-            path:'search',
-            component:SearchComponent
+            path: 'search',
+            component: SearchComponent
          }, {
-            path:'support',
-            component:SupportComponent
+            path: 'support',
+            component: SupportComponent
          }, {
             path: '',
             loadChildren: './portfolio/portfolio.module#PortfolioModule'
@@ -52,16 +52,15 @@ export const AppRoutes: Routes = [{
             loadChildren: './testimonial/testimonial.module#TestimonialModule'
          }, {
             path: 'sidebar-widgets',
-            component:sidebarWidgetsComponent
+            component: sidebarWidgetsComponent
          }, {
             path: '',
             loadChildren: './session/session.module#SessionModule'
          }, {
             path: '',
             loadChildren: './shop/shop.module#ShopModule'
-         }, { 
-				path: 'about/:keyword',component: AboutComponent 
-			}
+         }, {path: 'about/:keyword', component: AboutComponent
+}
       ]
 }];
 
