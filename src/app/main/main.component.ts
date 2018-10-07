@@ -61,8 +61,4 @@ export class MainComponent implements OnInit {
    	scrollContainer.scrollTop = 0;
    }
 
-   addToggleClass() {
-   	$('body').toggleClass('rtl-enable');
-   }
-
 }

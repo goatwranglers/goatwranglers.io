@@ -56,11 +56,8 @@ export class FooterComponent implements OnInit {
    * Socail media information.
    */
   socialDetails : any = [
-    { url: '', icon : 'fa fa-facebook'},
     { url: '', icon : 'fa fa-twitter'},
-    { url: '', icon : 'fa fa-google'},
-    { url: '', icon : 'fa fa-linkedin'},
-    { url: '', icon : 'fa fa-instagram'}
+    { url: '', icon : 'fa fa-linkedin'}
   ]
 
   socialsClasses : any = {ulClass:"mb-0", liClass:"", linkClass:"nav-link"}

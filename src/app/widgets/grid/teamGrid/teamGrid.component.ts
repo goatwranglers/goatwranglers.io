@@ -11,6 +11,18 @@ import { Component, OnInit, Input, Output, EventEmitter  } from '@angular/core';
 })
 export class TeamGridComponent implements OnInit {
 
+    /*
+   * Social links
+   */
+  socialDetails: any = [
+    { icon : 'fa-twitter text-info'}
+  ]
+
+  /*
+   * Classes of social ul, li
+   */
+  socialsClasses : any = {ulClass:"", liClass:"", linkClass:""}
+
   /*
    * teamGridContent is a attribute.
    */
@@ -21,18 +33,5 @@ export class TeamGridComponent implements OnInit {
   ngOnInit() {
   }
 
-  /*
-   * Social links
-   */
-  socialDetails : any = [
-    { icon : 'fa-facebook'},
-    { icon : 'fa-twitter text-info'},
-    { icon : 'fa fa-pinterest-p text-danger'},
-  ]
-
-  /*
-   * Classes of social ul, li
-   */
-  socialsClasses : any = {ulClass:"", liClass:"", linkClass:""}
 
 }

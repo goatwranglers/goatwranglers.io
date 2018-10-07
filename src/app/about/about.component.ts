@@ -9,40 +9,50 @@ import { ChkService } from '../service/chk.service';
 })
 export class AboutComponent implements OnInit {
 
+     /*
+   * Social links
+   */
+socialDetails: any = [ { url: '', icon : 'fa-twitter text-info'} ];
+
+/*
+ * Classes of social ul, li
+ */
+socialsClasses: any = {ulClass: '', liClass: '', linkClass: '' };
+
    /* Variables */
-   services : any;
-   about    : any;
-   team     : any;
-   contact  : any;
+   services: any;
+   about: any;
+   team: any;
+   contact: any;
 
    constructor(private pageTitleService: PageTitleService, private service:ChkService) {
 
       /* Page title */
-      this.pageTitleService.setTitle(" Know More About Us");
+      this.pageTitleService.setTitle(' Know More About Us');
 
       /* Page subTitle */
-      this.pageTitleService.setSubTitle(" Our latest news and learning articles. ");
+      this.pageTitleService.setSubTitle(' Our latest news and learning articles. ');
 
       this.service.getServices().
-         subscribe(response => {this.services = response},
+         subscribe(response => {this.services = response; },
                   err       => console.log(err),
-                  ()        =>this.services
+                  ()        => this.services
                );
 
       this.service.getAbout().
-         subscribe(response => {this.about = response},
+         subscribe(response => {this.about = response; },
                    err      => console.log(err),
                    ()       => this.about
                );
 
       this.service.getTeam().
-         subscribe(response => {this.team = response},
+         subscribe(response => {this.team = response; },
                    err      => console.log(err),
                    ()       => this.team
                );
 
       this.service.getContactContent().
-         subscribe(response => {this.contact = response},
+         subscribe(response => {this.contact = response; },
                    err      => console.log(err),
                    ()       => this.contact
                );
@@ -52,19 +62,5 @@ export class AboutComponent implements OnInit {
 
    ngOnInit() {
    }
-   
-   /*
-   * Social links
-   */
-  socialDetails : any = [
-    { url: 'https://www.facebook.com/', icon : 'fa-facebook'},
-    { url: '', icon : 'fa-twitter text-info'},
-    { url: '', icon : 'fa-pinterest text-danger'},
-  ]
-
-  /*
-   * Classes of social ul, li
-   */
-  socialsClasses : any = {ulClass:"", liClass:"", linkClass:""}
 
 }

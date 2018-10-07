@@ -47,13 +47,7 @@ textarea,
 input {
   vertical-align: baseline;
 }
-html,
-body {
-  &[dir=rtl],
-  &[dir=ltr] {
-    unicode-bidi: embed
-  }
-}
+
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     word-wrap: break-word;
