@@ -9,13 +9,11 @@ import { MenuBlockComponent } from './menuBlock/menuBlock.component';
 import { CallToActionComponent } from './callToAction/callToAction.component';
 import { ServiceGridComponent } from './grid/serviceGrid/serviceGrid.component';
 import { PostGridComponent } from './grid/postGrid/postGrid.component';
-import { GallaryGridComponent } from './grid/gallaryGrid/gallaryGrid.component';
 import { SocialsComponent } from './socialShare/socials/socials.component';
 import { CategoriesListComponent } from './list/categoriesList/categoriesList.component';
 import { SubscribeComponent } from './subsribeForm/subscribe/subscribe.component';
 import { SearchNowComponent } from './searchNow/searchNow.component';
 import { TeamComponent } from './team/team.component';
-import { testimonialSliderComponent } from './testimonial/testimonialSlider/testimonialSlider.component';
 import { TeamGridComponent } from './grid/teamGrid/teamGrid.component';
 import { HomeContactComponent } from './contact/homeContact/homeContact.component';
 import { SendMessageComponent } from './contact/sendMessage/sendMessage.component';
@@ -37,11 +35,9 @@ import { LatestTweetsComponent } from './list/latestTweets/latestTweets.componen
 import { Category2Component } from './list/category2/category2.component';
 import { Tags1Component } from './tags/tags1/tags1.component';
 import { Tags2Component } from './tags/tags2/tags2.component';
-import { TestimonialComponent } from './testimonial/testimonial/testimonial.component';
-import { Testimonial2Component } from './testimonial/testimonial2/testimonial2.component';
 import { ArchiveComponent } from './list/archive/archive.component';
 import { AboutAuthorComponent } from './aboutAuthor/aboutAuthor.component';
-import { FooterLogoListComponent } from './footerLogoList/footerLogoList.component'
+import { FooterLogoListComponent } from './footerLogoList/footerLogoList.component';
 
 
 
@@ -59,13 +55,11 @@ import { FooterLogoListComponent } from './footerLogoList/footerLogoList.compone
     CallToActionComponent,
     ServiceGridComponent,
     PostGridComponent,
-    GallaryGridComponent,
     SocialsComponent,
     CategoriesListComponent,
     SubscribeComponent,
     SearchNowComponent,
     TeamComponent,
-    testimonialSliderComponent,
     TeamGridComponent,
     HomeContactComponent,
     SendMessageComponent,
@@ -87,25 +81,21 @@ import { FooterLogoListComponent } from './footerLogoList/footerLogoList.compone
     Category2Component,
     Tags1Component,
     Tags2Component,
-    TestimonialComponent,
-    Testimonial2Component,
     ArchiveComponent,
     AboutAuthorComponent,
     FooterLogoListComponent
   ],
-  exports:[
+  exports: [
     ContactComponent,
     MenuBlockComponent,
     CallToActionComponent,
     ServiceGridComponent,
     PostGridComponent,
-    GallaryGridComponent,
     SocialsComponent,
     CategoriesListComponent,
     SubscribeComponent,
     SearchNowComponent,
     TeamComponent,
-    testimonialSliderComponent,
     TeamGridComponent,
     HomeContactComponent,
     SendMessageComponent,
@@ -127,8 +117,6 @@ import { FooterLogoListComponent } from './footerLogoList/footerLogoList.compone
     Category2Component,
     Tags1Component,
     Tags2Component,
-    TestimonialComponent,
-    Testimonial2Component,
     ArchiveComponent,
     AboutAuthorComponent,
     FooterLogoListComponent

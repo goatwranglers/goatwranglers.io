@@ -31,7 +31,6 @@ const HEADERMENUITEMS = [
       name: 'Dev Playbook',
       type: 'link',
    },
-   { state: 'contact', name: 'Contact', type: 'link'},
    {
     state: 'blog',
     name: 'Blog',
@@ -39,9 +38,10 @@ const HEADERMENUITEMS = [
  },
    {
       state: 'blog',
-      name: 'Blog',
+      name: 'Podcast',
       type: 'link'
-   }
+   },
+   { state: 'contact', name: 'Contact', type: 'link'}
    ];
 
 const FOOTERMENU = [

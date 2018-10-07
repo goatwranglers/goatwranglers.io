@@ -18,7 +18,7 @@ export class CallToActionComponent implements OnInit {
    * If used variableName so get the data from component.ts file.
    * 2. <div angly-callToAction heading="heading text"></div>
    */
-  @Input() heading : string;
+  @Input() heading: string;
 
   /*
    * subHeading is a attribute.
@@ -27,14 +27,14 @@ export class CallToActionComponent implements OnInit {
    * If used variableName so get the data from component.ts file.
    * 2. <div angly-callToAction subHeading="heading text"></div>
    */
-  @Input() subHeading : string;
+  @Input() subHeading: string;
 
   /*
    * buttonInfo is a attribute.
    * Format of object. Eg:- {"url":"", "title": ""}
    * Used like this:- <div angly-callToAction buttonInfo="variableName"></div>
    */
-  @Input() buttonInfo : Object = {};
+  @Input() buttonInfo: Object = {};
 
   constructor() { }
 

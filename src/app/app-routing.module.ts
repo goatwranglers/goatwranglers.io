@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MainComponent } from './main/main.component';
 import { HomeComponent } from './home/home.component';
-import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 import { FeaturesComponent } from './features/features.component';
 import { AboutComponent } from './about/about.component';
@@ -27,9 +26,6 @@ export const AppRoutes: Routes = [{
             path: '',
             loadChildren: './blog/blog.module#BlogModule'
          }, {
-            path: 'pricing',
-            component: PricingComponent
-         }, {
             path: 'contact',
             component: ContactComponent
          }, {
@@ -44,12 +40,6 @@ export const AppRoutes: Routes = [{
          }, {
             path: 'support',
             component: SupportComponent
-         }, {
-            path: '',
-            loadChildren: './portfolio/portfolio.module#PortfolioModule'
-         }, {
-            path: '',
-            loadChildren: './testimonial/testimonial.module#TestimonialModule'
          }, {
             path: 'sidebar-widgets',
             component: sidebarWidgetsComponent

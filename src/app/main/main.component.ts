@@ -4,31 +4,31 @@ import { ChkService } from '../service/chk.service';
 import { Subscription } from 'rxjs';
 import { Router, NavigationEnd } from '@angular/router';
 import { DOCUMENT } from '@angular/platform-browser';
-declare var $ : any;
+declare var $: any;
 
 @Component({
     selector: 'angly-layout',
-  	templateUrl:'./main.component.html',
+  	templateUrl: './main.component.html',
   	styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit{
+export class MainComponent implements OnInit {
 
 	 private _router: Subscription;
 	 url: string;
 	 private _mediaSubscription: Subscription;
 	 private _routerEventsSubscription: Subscription;
-	 isHome : boolean = true;
-	 isBlog : boolean = false;
-	 isCommon : boolean = false;
-	 fixedHeaderClass : boolean = false;
-	
-	/* Variables */
-	headerTitle    : string;
-	headerSubTitle : string;
-	featuredPost   : any;
+	 isHome = true;
+	 isBlog = false;
+	 isCommon = false;
+	 fixedHeaderClass = false;
 
-	constructor(@Inject(DOCUMENT) private document: any, private pageTitleService: PageTitleService, private service:ChkService, public router: Router) {
-	
+	/* Variables */
+	headerTitle: string;
+	headerSubTitle: string;
+	featuredPost: any;
+
+	constructor(@Inject(DOCUMENT) private document: any, private pageTitleService: PageTitleService, private service: ChkService, public router: Router) {
+
 		/* page title.*/
 			this.pageTitleService.title.subscribe((val: string) => {
 			this.headerTitle = val;
@@ -40,19 +40,19 @@ export class MainComponent implements OnInit{
 		});
 
 		this.service.getFeaturedPost().
-			subscribe(response => {this.featuredPost = response},
+			subscribe(response => {this.featuredPost = response; },
 			          err    => console.log(err),
 			          ()     => this.featuredPost
 			       );
 	}
 
 	ngOnInit() { }
-	
+
 	@HostListener('scroll', ['$event'])
 	onScroll(event) {
-		  if(event.path && (event.path[0].scrollTop > 0)){
+		  if (event.path && (event.path[0].scrollTop > 0)) {
 		  		this.fixedHeaderClass = true;
-		  }else{
+		  } else {
 		  		this.fixedHeaderClass = false;
 		  }
 	}
